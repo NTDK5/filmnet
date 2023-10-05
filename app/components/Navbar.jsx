@@ -37,7 +37,7 @@ const Navbar = () => {
       <nav className="nav" ref={navRef}>
         <Link href="/" className="logo_link">
           <div className="logo">
-            <img src="/public/Logo.svg" />
+            <img src="/public/Logo.png" />
             <h1>FilmNet</h1>
           </div>
         </Link>
