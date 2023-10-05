@@ -205,6 +205,7 @@
 @media screen and (max-width: 768px) {
   .hero {
     height: 60vh;
+    scroll-snap-align: none;
   }
   .hero img {
     height: 60vh;
@@ -244,6 +245,7 @@
   .movie-details_content .btn-group {
     align-items: start;
     justify-content: start;
+    width: 80%;
   }
   .cast {
     width: 100%;
@@ -251,15 +253,20 @@
     margin: 0;
   }
   .cast_list {
+    width: 100%;
     grid-template-columns: 1fr 1fr;
     margin-top: 30px;
+    padding: 0;
+    gap: 15px;
   }
   .cast_card {
-    width: 200px;
+    width: 150px;
     flex-direction: column;
+    padding: 0;
   }
   .cast_details {
     padding: 0;
+    margin: 0;
   }
   .production {
     margin: 0;

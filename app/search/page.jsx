@@ -90,11 +90,11 @@ const SearchBar = () => {
           <div className="list">
             {result.results?.map((slide, index) => {
               let linkUrl = "";
-              if (slide.media_type === "movie") {
+              if (slide.media_type === "movie" || filter === "movie") {
                 linkUrl = `movie/${slide.id}`;
-              } else if (slide.media_type === "tv") {
+              } else if (slide.media_type === "tv" || filter === "tv") {
                 linkUrl = `tvshow/${slide.id}`;
-              } else if (slide.media_type === "person") {
+              } else if (slide.media_type === "person" || filter === "person") {
                 linkUrl = `people/${slide.id}`;
               }
               return (
@@ -121,7 +121,7 @@ const SearchBar = () => {
       </div>
       <ReactPaginate
         pageCount={result.total_pages}
-        pageRangeDisplayed={5}
+        pageRangeDisplayed={2}
         marginPagesDisplayed={2}
         onPageChange={handlePageChange}
         containerClassName={search ? "pagination" : "none"}
